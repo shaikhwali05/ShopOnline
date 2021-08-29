@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background-color:#f1f3f4;
+}
+.top-nav-bar{
+    background: white;
+    position: absolute;
+    z-index: 2;
+    height: 57px;
+    top: 0;
+    position: sticky;
+    border-bottom: 3px solid orange;
+    margin-bottom: 20px;
+}
+.logo{
+    height: 40px;
+   
+    margin: 5px 10px;
+}
+.form-control{
+    
+    border-top-left-radius: 20px!important;
+    margin-top: 9px;
+    margin-left: 30px;
+    border: 1px solid orange;
+    border-top-right-radius: 0px!important;
+    border-bottom-left-radius: 20px!important;
+    border-bottom-right-radius: 0px!important;
+    box-shadow: none;
+}
+.input-group-text{
+    border: 1px solid orange;
+    border-top-left-radius: 0px!important;
+    border-bottom-left-radius: 0px!important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px!important;
+    margin: 8.5px 3px 10px 0;
+    
+
+}
+.search-box{
+    display: inline-flex;
+    width: 60%;
+}
+.menu-bar{
+    width: 40%;
+    height: 55px;
+    float: right;
+}
+.menu-bar ul{
+    float: right;
+    display: inline-flex;
+}
+.menu-bar ul li{
+    border: 1px solid #fff;
+    padding: 15px 35px;
+    list-style: none;
+    text-align: center;
+    background-color: orange;
+    cursor: pointer;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+
+}
+.fa-shopping-basket{
+    margin-right: 10px;
+}
+.sidemenu-bar{
+    height: 79%;
+    width: 15%;
+    font-size: 16px;
+    background-color: gray;
+    z-index: 2;
+    float: left;
+}
+.sidemenu-bar ul{
+    margin-left: 10px;
+}
+.sidemenu-bar ul li{
+    list-style: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.sidemenu-bar ul li:hover{
+    color: orange;
+}
+.sidemenu-bar ul li ul {
+    display: none;
+    z-index: 10;
+    top: 77px;
+}
+.sidemenu-bar ul li:hover ul{
+    display: block;
+    margin-left: 10%;
+    height: 400px;
+    padding: 0px 100px 10px 10px;
+    position: fixed;
+    background: #ececee;
+    box-shadow: 1px 1px 4px 1px rgba( 0, 0, 0, 0.5);
+}
+.fa-angle-right{
+    float: right;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+#menu-btn , #close-menu{
+    font-size: 30px;
+    color: orange;
+    margin: 10px;
+}
+.slider{
+    width: 85%;
+    margin-left: 15%;
+    
+    
+    padding: 0 10px;
+}
+.carousel-inner .carousel-item img{
+    height: 390px;
+}
+.carousel{
+    box-shadow: 1px 1px 4px 1px rgba( 0, 0, 0, 0.5);
+}
+.carousel-indicators{
+    z-index: 1!important;
+}
+.featured-category{
+    margin: 50px 0px;
+}
+.featured-category img{
+    width: 100%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.featured-category img:hover{
+    transform: scale(1.1);
+}
+.title-box{
+    background: orange;
+    color: white;
+    width: 180px;
+    height: 40px;
+    padding: 4px 10px;
+    display: flex;
+    margin-bottom: 30px;
+
+}
+.title-box h2{
+    font-size: 24px;
+}
+.title-box::after{
+    content: '';
+    position: absolute;
+    display: flex;
+    border-top: 40px solid orange;
+    border-right: 50px solid transparent;
+    margin-top: -4px;
+    margin-left: 170px;
+}
+.product-top img{
+    width: 100%;
+}
+.overlay-right{
+    display: block;
+    margin-left: 10px;
+    top: 10%;
+    width: 70px;
+    position: absolute;
+    opacity: 0;
+}
+.overlay-right .fa{
+    background: white;
+    color: #000;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    margin-top: 5%;
+    padding: 7px;
+    margin-bottom: 5%;
+
+}
+.overlay-right .btn-secondary{
+    background: none!important;
+    border: none!important;
+    box-shadow: none!important;
+}
+.product-top:hover .overlay-right{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+.product-bottom .fa{
+    font-size: 10px;
+    color: orange;
+}
+.product-bottom h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.product-bottom h5{
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+.new-products{
+    margin: 50px 0px;
+}
+.websites{
+    margin: 50px 0;
+}
+.websites img{
+    width: 20%;
+    margin: auto;
+}
+.feature-box img{
+    margin: auto;
+    cursor: pointer;
+}
+.footer{
+    background: black;
+    margin-top: 50px ;
+    color: white;
+}
+.footer h1{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 4px;
+}
+.footer p{
+    font-size: 12px;
+    
+}
+.footer-img img{
+    width: 120px;
+    cursor: pointer;
+
+}
+.copyright{
+    margin-bottom: -80px;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.fa-heart{
+    color: red;
+    font-size: 20px;
+}
+.footer hr{
+    background: #ccc;
+}
+.footer .row .fa{
+    color: #fff;
+    padding-right: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.single-product{
+    margin-top: 70px;
+}
+.new-arrival{
+    background-color: green;
+    width: 50px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+.col-md-7 h2{
+    color: #555;
+}
+.single-product .fa{
+    color: orange;
+}
+.single-product .price{
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+}
+.single-product input{
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+    height: 33px;
+    width: 30px;
+}
+.single-product .btn-primary{
+    background-color: orange!important;
+    color: white;
+    font-size: 15px;
+    margin-left: 20px;
+    border: none;
+    box-shadow: none!important;
+}
+.product-description h6{
+    margin-top: 50px;
+    color: orange;
+}
+
+.product-description p{
+    margin-top: 30px;
+}
+
+
+
+
+@media only screen and (max-width:980px){
+    .top-nav-bar{
+        height: 118px;
+        border-bottom: 0;
+    }
+    .search-box{
+        width: 100%;
+    }
+    .menu-bar{
+        width: 100%;
+    }  
+    .menu-bar ul{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .menu-bar ul li{
+        height: 55px;
+        width: 100%;
+    }
+    .slider{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width:980px){
+    .sidemenu-bar{
+        width: 34%;
+        z-index: 20;
+        position: fixed;
+        top: 133px;
+        font-size: 12px;
+        display: none;
+    }
+    .sidemenu-bar ul li ul{
+        top: 134px;
+    }
+    .sidemenu-bar ul li:hover ul{
+        margin-left: 30%;
+    }
+}
